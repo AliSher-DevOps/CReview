@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7a7c1f80-9a8f-4181-9845-8253adfdf87b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/lg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/analyze.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/managesource.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/appAnalyzerReplies.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/appAnalyzerReplies.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appAnalyzerReplies/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/appAnalyzerReplies/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appAnalyzerReplies/celery.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appAnalyzerReplies/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/appAnalyzerReplies/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/celerybeat-schedule.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/celerybeat-schedule.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/celerybeat-schedule.dir" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creviews/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/creviews/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creviews/dataForAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/creviews/dataForAnalysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creviews/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/creviews/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creviews/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/creviews/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creviews/playstoreDataset.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creviews/sentimentalAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/creviews/sentimentalAnalysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creviews/tasks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creviews/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creviews/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/creviews/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creviews/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/creviews/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalized_model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/finalized_model.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chatBot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatBot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/createAnAccount.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/createAnAccount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/downloadReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/view_app.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/view_app.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\92344\djangoprojects\appAnalyzerReplies\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1j0OB1RP014RrblQDjDv8xvgPnf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\92344\djangoprojects\appAnalyzerReplies\static\images" />
+      <recent name="C:\Users\92344\djangoprojects\appAnalyzerReplies\assets\admin\img" />
+      <recent name="C:\Users\92344\djangoprojects\appAnalyzerReplies\static" />
+      <recent name="C:\Users\92344\djangoprojects\appAnalyzerReplies\creviews\static" />
+      <recent name="C:\Users\92344\djangoprojects\appAnalyzerReplies\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\92344\djangoprojects\appAnalyzerReplies\appAnalyzerReplies" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.sentimentalAnalysis">
+    <configuration name="chatbot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="appAnalyzerReplies" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/creviews" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/creviews/chatbot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sentimentalAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="appAnalyzerReplies" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/creviews" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/creviews/sentimentalAnalysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="appAnalyzerReplies" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/creviews" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/creviews/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="appAnalyzerReplies" type="Python.DjangoServer" factoryName="Django server">
+      <module name="appAnalyzerReplies" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="appAnalyzerReplies.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.sentimentalAnalysis" />
+        <item itemvalue="Python.chatbot" />
+        <item itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a7c1f80-9a8f-4181-9845-8253adfdf87b" name="Default Changelist" comment="" />
+      <created>1602937403386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602937403386</updated>
+      <workItem from="1602937440396" duration="11133000" />
+      <workItem from="1603011325568" duration="15816000" />
+      <workItem from="1603103523173" duration="1487000" />
+      <workItem from="1603384832089" duration="636000" />
+      <workItem from="1603517991512" duration="10701000" />
+      <workItem from="1603563270396" duration="8659000" />
+      <workItem from="1603619886450" duration="27607000" />
+      <workItem from="1603700065693" duration="13358000" />
+      <workItem from="1604140721547" duration="20720000" />
+      <workItem from="1604172185671" duration="763000" />
+      <workItem from="1604173041121" duration="6340000" />
+      <workItem from="1604251967224" duration="6125000" />
+      <workItem from="1605037289340" duration="583000" />
+      <workItem from="1605526910698" duration="5682000" />
+      <workItem from="1605536792176" duration="6715000" />
+      <workItem from="1605614134412" duration="6000000" />
+      <workItem from="1605873061756" duration="16000" />
+      <workItem from="1605947134828" duration="2963000" />
+      <workItem from="1606308747613" duration="3511000" />
+      <workItem from="1606740572595" duration="11955000" />
+      <workItem from="1606830078692" duration="3625000" />
+      <workItem from="1606911553312" duration="11311000" />
+      <workItem from="1606985729548" duration="590000" />
+      <workItem from="1607082985935" duration="16239000" />
+      <workItem from="1607172852587" duration="21060000" />
+      <workItem from="1607260639493" duration="5754000" />
+      <workItem from="1607267973544" duration="394000" />
+      <workItem from="1607268462476" duration="537000" />
+      <workItem from="1607278568537" duration="10153000" />
+      <workItem from="1607348403767" duration="906000" />
+      <workItem from="1607349725903" duration="1723000" />
+      <workItem from="1607351637493" duration="355000" />
+      <workItem from="1607352054613" duration="1013000" />
+      <workItem from="1607353114494" duration="696000" />
+      <workItem from="1607367311026" duration="10529000" />
+      <workItem from="1607430496000" duration="16895000" />
+      <workItem from="1607606159508" duration="4168000" />
+      <workItem from="1607696378851" duration="4775000" />
+      <workItem from="1607713222409" duration="162000" />
+      <workItem from="1607713564784" duration="3981000" />
+      <workItem from="1607761291120" duration="8377000" />
+      <workItem from="1607844184894" duration="206000" />
+      <workItem from="1607844433225" duration="13027000" />
+      <workItem from="1607978200878" duration="8580000" />
+      <workItem from="1608042559707" duration="6160000" />
+      <workItem from="1608298187535" duration="5409000" />
+      <workItem from="1608304531693" duration="3038000" />
+      <workItem from="1608316193365" duration="24784000" />
+      <workItem from="1608897006734" duration="9975000" />
+      <workItem from="1609065805096" duration="1164000" />
+      <workItem from="1609091698910" duration="20872000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#Inspections" timestamp="1607268067895">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1607268067895" />
+    <state x="275" y="22" key="#Notifications" timestamp="1607352969472">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1607352969472" />
+    <state x="405" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608305243372">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="405" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1608305243372" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607774681235">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607774681235" />
+    <state x="427" y="0" key="Diagram.Print.Preview.Dialog" timestamp="1608318746488">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="427" y="0" key="Diagram.Print.Preview.Dialog/0.0.1366.728@0.0.1366.728" timestamp="1608318746488" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1608319483078">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1608319483078" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1607352933150">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607352933150" />
+    <state x="536" y="257" key="Github.ShareDialog" timestamp="1607353151144">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="536" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1607353151144" />
+    <state x="466" y="69" key="Github.UntrackedFilesDialog" timestamp="1607350632894">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="69" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607350632894" />
+    <state width="1323" height="458" key="GridCell.Tab.0.bottom" timestamp="1607696591572">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="458" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607696591572" />
+    <state width="1323" height="458" key="GridCell.Tab.0.center" timestamp="1607696591572">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="458" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607696591572" />
+    <state width="1323" height="458" key="GridCell.Tab.0.left" timestamp="1607696591572">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="458" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607696591572" />
+    <state width="1323" height="458" key="GridCell.Tab.0.right" timestamp="1607696591572">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="458" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607696591572" />
+    <state width="1323" height="203" key="GridCell.Tab.1.bottom" timestamp="1603056494378">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="203" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603056494378" />
+    <state width="1323" height="203" key="GridCell.Tab.1.center" timestamp="1603056494378">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="203" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1603056494378" />
+    <state width="1323" height="203" key="GridCell.Tab.1.left" timestamp="1603056494378">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="203" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1603056494378" />
+    <state width="1323" height="203" key="GridCell.Tab.1.right" timestamp="1603056494378">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="203" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1603056494378" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1603634395054">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1603634395054" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1607352113095">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607352113095" />
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1609091703094">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1609091703094" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1608045209158">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1608045209158" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/appAnalyzerReplies$sentimentalAnalysis.coverage" NAME="sentimentalAnalysis Coverage Results" MODIFIED="1607696581985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/creviews" />
+    <SUITE FILE_PATH="coverage/appAnalyzerReplies$chatbot.coverage" NAME="chatbot Coverage Results" MODIFIED="1607264223565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/creviews" />
+  </component>
+</project>
