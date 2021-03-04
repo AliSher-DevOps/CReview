@@ -1,1 +1,28 @@
 
+from django.shortcuts import render, redirect
+from django.contrib.auth.models import auth
+
+
+def login(request):
+    return render(request, 'login.html', )
+
+
+def signup(request):
+    return render(request, 'createAnAccount.html', )
+
+
+def forget_password(request):
+    return render(request, 'forgetpsd.html')
+
+
+def update_password(request):
+    return redirect('login')
+
+
+def main_menu(request):
+    return render(request, 'index.html')
+
+
+def logout(request):
+    auth.logout(request)
+    return redirect('/')
