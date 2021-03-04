@@ -14,10 +14,12 @@ analysis customer reviews and generate autoreply for them
 
 # CONTACT
 alisherkamal13101@gmail.com
+
 03449053117
 
 # HOW TO RUN LOCALLY
 pip install -r requirements.txt
+
 py manage.py runserver
 
 # NOTE
