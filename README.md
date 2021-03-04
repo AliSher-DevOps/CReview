@@ -12,16 +12,16 @@ software scraps the customer's reviews from all developer's consoles/accounts an
 in one platform but none of them like the CReview management system, which scraps, and
 analysis customer reviews and generate autoreply for them
 
-#CONTACT
+# CONTACT
 alisherkamal13101@gmail.com
 03449053117
 
-#HOW TO RUN LOCALLY
+# HOW TO RUN LOCALLY
 pip install -r requirements.txt
 py manage.py runserver
 
-#NOTE
+# NOTE
 CReview management system is developing by Ali Sher Kamal under the supervision of Dr Kashif Bilal and now its under-development phase, some of the features of CReview are open-source and will be available on github soon, if you want to donate us please contact us 😃
 
-#NOTE
+# NOTE
 Project is allowed to use to help developers for better understanding of django _ project and idea is not allowed to use for commercial or university projects _ please let us know before.
