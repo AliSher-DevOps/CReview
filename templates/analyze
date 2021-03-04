@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}  <title>{{ title }}</title> {% endblock %}
+{% block content %}
+    <style>
+
+
+        /* Add a right margin to each icon */
+        .fa {
+            margin-left: -12px;
+            margin-right: 8px;
+            font-size: 150px;
+
+        }
+
+        #myDIV {
+            display: none;
+        }
+       #myDIV2 {
+            display: none;
+        }
+    </style>
+
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-2 mt-5 p-5 ">
+
+                <img src="{% static 'images/lg.png' %}" alt="Image" class="img-fluid">
+
+            </div>
+            <div class="col-md-8 mt-5 pt-5 ">
+                <div class="d-flex justify-content-center">
+                    <form action="processing">
+                        <span>Use Our Model to analyze customer feedback and our ChatBot will generate replies to those feedback and much more
+                            . It will take 10 to 20 minutes to analyze and generate reports. </span>
+                        <button type="submit" onclick="myFunction()" id="btn" class="btn btn-info m-3 ml-5">Analyze
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="row ">
+
+            <div class="col-md-4 mt-5 p-5 " id="myDIV">
+
+                <i class="fa fa-spinner fa-spin"></i>
+                <span class="text-success">Converting......</span>
+
+            </div>
+            <div class="col-md-6 mt-5 p-2" id="myDIV2">
+
+                <span class="text-secondary  bg-white">Please be patient, as this process can take several minutes</span>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            x.style.display = "block";
+             var x2 = document.getElementById("myDIV2");
+            x2.style.display = "block";
+
+        }
+    </script>
+{% endblock %}
