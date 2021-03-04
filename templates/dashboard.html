@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% block title %}  <title>{{ title }}</title> {% endblock %}
+{% block content %}
+
+
+    <div class="container mt-5 pt-4">
+        <div class="row">
+            <div class="col-sm-2 bg-white p-2 d-flex align-items-center justify-content-center">
+                <h2 class="text-info "> {{ total }}</h2>
+                <small class="text-warning pl-1 ">Total Reviews</small>
+            </div>
+            <div class="col-sm-1 bg-white p-2">
+                <h5 class="text-success"> {{ positive }}</h5>
+                <small class="text-secondary">Positive </small>
+            </div>
+            <div class="col-sm-1 bg-white p-2">
+                <h5 class="text-danger"> {{ negative }}</h5>
+                <small class="text-secondary">Negative </small>
+            </div>
+            <div class="col-sm-1 bg-white p-2">
+                <h5 class="text-warning"> {{ neutral }}</h5>
+                <small class="text-secondary">Neutral </small>
+            </div>
+            <div class="col-sm-1 bg-white p-2">
+                <h5 class="text-success"> {{ appreciation }}</h5>
+                <small class="text-secondary">Appreciation </small>
+            </div>
+            <div class="col-sm-1 bg-white p-2">
+                <h5 class="text-primary"> {{ question }}</h5>
+
+                <small class="text-secondary">Question</small>
+            </div>
+            <div class="col-sm-1 bg-white p-2">
+                <h5 class="text-danger"> {{ bug_report }}</h5>
+                <small class="text-secondary">Bug Report</small>
+            </div>
+            <div class="col-sm-1 bg-white p-2">
+                <h5 class="text-warning"> {{ crash_report }}</h5>
+
+                <small class="text-secondary">Crash Report</small>
+            </div>
+            <div class="col-sm-1 bg-white p-2">
+                <h5 class="text-dark"> {{ feature_suggestion }}</h5>
+
+                <small class="text-secondary">Feature Suggestion</small>
+            </div>
+            <div class="col-sm-1 bg-white p-2">
+                <h5 class="text-primary"> {{ personal_experience }}</h5>
+                <small class="text-secondary">Personal Experience</small>
+            </div>
+             <div class="col-sm-1 bg-white p-2">
+                <small class="text-secondary">{{date}}</small>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-1">
+        <div class="row">
+            <div class="col-sm-6 bg-white  p-1">
+
+                <div id="piechart" style="max-width: 450px; height: 400px;"></div>
+
+            </div>
+            <div class="col-sm-6 bg-white p-1">
+                <div id="curve_chart" style="max-width: 600px; height: 400px;"></div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container mt-1 mb-4">
+        <div class="row">
+            <div class="col-sm-12 bg-white p-2">
+                <p class="pl-3">
+                    View Sentimental Analysis Weekly Report of your play store application
+
+                    <a href="reports"> View Report </a>
+                    and
+                    <a href="monthlyReport"> Monthly Report </a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages': ['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Type', 'Reviews per Week'],
+                ['Postive', {{positive}}],
+                ['Negative', {{negative}}],
+                ['Netrual', {{ neutral}}],
+                ['Appreciation', {{ appreciation }}],
+                ['Question', {{ question }}],
+                ['Bug Report', {{ bug_report }}],
+                ['Crash Report', {{ crash_report }}],
+                ['Feature Suggestion', {{ feature_suggestion }}],
+                ['Personal Experience', {{ personal_experience }}],
+            ]);
+
+            var options = {
+                title: 'Sentimental Analysis Weekly Report'
+                ,
+                responsive: true,
+                pieHole: 0.4,
+                colors: ['green', 'red', 'grey', 'indigo', 'purple', 'navy', 'blue', 'orange', 'Brown'],
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages': ['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['sentiment', 'Total Reviews'],
+                ['Positive', {{ positive }}],
+                ['Negative', {{ negative }}],
+                ['Neutral', {{ neutral }}],
+
+                ['Question', {{ question }}],
+                ['Appreciation', {{ appreciation }}],
+
+                ['Bug Report', {{ bug_report }}],
+                ['Crash Report', {{ crash_report }}],
+                ['Feature Suggestion', {{ feature_suggestion }}],
+
+                ['Personal Experience', {{ personal_experience }}],
+            ]);
+
+            var options = {
+                title: 'Weekly Report',
+                curveType: 'function',
+                legend: {position: 'Top'}
+                ,
+
+                responsive: true,
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+{% endblock %}
+
+
+
+
+

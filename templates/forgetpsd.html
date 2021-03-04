@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reset Password</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5 ">
+    <div class="row">
+
+        <div class="col-sm-12  d-flex align-items-center justify-content-center">
+            <h4 class="font-weight-bold text-muted">CReview</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+
+        </div>
+        <div class="col-sm-4 bg-white p-3 m-3">
+            <form action="resetPassword" method="post">
+                  <div class="border border-danger text-center">
+                {% for message in messages %}
+                    <span class="text-danger">
+
+        {{ message }}
+        </span>
+                {% endfor %}
+            </div>
+                <div class="form-group pt-3">
+                     <small class="text-muted ">
+                        Seem like you forgot your  password for <mark class="text-danger">CReview</mark>. Enter your email to reset your password.
+                    </small>
+                    <label class="pt-2" for="recovery_email">Please enter your recovery email address:</label>
+                    <input type="email" class="form-control" id="recovery_email" placeholder="ali@yahoo.com"
+                           name="recovery_email" required>
+                </div>
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary btn btn-block">Send password reset code</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

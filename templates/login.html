@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5 ">
+    <div class="row">
+
+        <div class="col-sm-12  d-flex align-items-center justify-content-center">
+            <h4 class="font-weight-bold text-muted">CReview</h4>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-12  d-flex align-items-center justify-content-center mt-3">
+            <h5>Welcome back! 👋</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+
+        </div>
+        <div class="col-sm-4 bg-white p-3 m-3">
+            <form action="homeMenu" method="post">
+                {% csrf_token %}
+                <div class="border border-danger text-center">
+                    {% for message in messages %}
+                        <span class="text-danger">
+
+        {{ message }}
+        </span>
+                    {% endfor %}
+                </div>
+                <div class="form-group pt-3">
+
+
+                    <label for="username">Username</label>
+                    <input type="input" class="form-control" id="username" placeholder="alisher" name="username"
+                           required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Password" name="password"
+                           minlength="6">
+
+                    <a href="forgetPassword" class="text-info"> forget password</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn btn-block">Sign In</button>
+            </form>
+
+            <div class=" border bg-white d-flex align-items-center justify-content-center p-2 mt-3 ">
+
+                <a href="signup" class="text-info"> Create An Account</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

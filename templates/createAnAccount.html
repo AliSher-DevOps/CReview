@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create An CReview Account</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light">
+
+<div class="container mt-3 ">
+    <div class="row">
+
+        <div class="col-sm-12  d-flex align-items-center justify-content-center">
+            <h4 class="font-weight-bold text-muted">CReview</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4  d-flex align-items-center justify-content-center mt-3">
+            <h5>Hello there! 👋 Let's get you set up</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 bg-white p-3 m-3">
+            <form action="home" method="post" id="form" onsubmit="return check()">
+
+                <div class="form-group">
+                    <div class="border border-danger text-center">
+                        {% for message in messages %}
+                            <span class="text-danger">
+
+        {{ message }}
+        </span>
+                        {% endfor %}
+                    </div>
+                    <div class="form-group pt-3">
+                        <label for="name ">User Name</label>
+                        <input type="text" class="form-control" id="fullname" placeholder="Your full name"
+                               name="fullname" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="16" required>
+                    </div>
+                    <label for="email">Gmail Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@yourcompany@gmail.com"
+                           name="email"
+                           pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password (more than 6 characters)</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" name="password"
+                           minlength="6" required>
+
+                    <small class="text-primary">
+                        Your password can’t be a commonly used password. Your password can’t be entirely numeric.
+
+                    </small><br>
+                    <label for="password" class="mt-1 pt-2">Confirm Password </label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter Password"
+                           name="confirmPassword" minlength="6" required>
+                    <small id='message' class="text-danger"></small><br>
+                    <a href="" class="text-info">
+                        I have read and agree to the Terms and Privacy</a>
+                </div>
+                {% csrf_token %}
+                <button type="submit" class="btn btn-success btn btn-block">Create</button>
+                <div class=" border bg-white d-flex align-items-center justify-content-center p-2 mt-3 ">
+
+                    Already got an account?
+                    <a href="login" class="text-info "> Sign In</a>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-4  p-3 m-3">
+            <p class="text-info">You're in great company.</p>
+            <p class="text-secondary">Many companies are using CReview for analysis and automated replies. </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+    $("#form").submit(function () {
+        if ($("#password").val() != $("#confirmPassword").val()) {
+            $("#message").text("Entered Password is not matching!! Try Again");
+            return false;
+        }
+    })
+
+</script>
+</body>
+</html>

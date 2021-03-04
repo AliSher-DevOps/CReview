@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}  <title>{{ title }}</title> {% endblock %}
+{% block content %}
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-3 mt-5 pt-5">
+                <img src="{% static 'images/sa.png' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-9">
+                <div class="container mt-5 pt-5">
+
+
+                    <span class="text-secondary p-2 ">{{ day_title }}</span>
+                    <!-- Small button groups (default and split) -->
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            Filter Reviews
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="weeklyReportPositive">Positive</a>
+                            <a class="dropdown-item" href="weeklyReportNegative">Negative</a>
+                            <a class="dropdown-item" href="weeklyReportNeutral">Neutral</a>
+                            <a class="dropdown-item" href="weeklyReportAppreciation">Appreciation</a>
+                            <a class="dropdown-item" href="weeklyReportBugs">Bug Report</a>
+                            <a class="dropdown-item" href="weeklyReportFeature">Feature Suggestion</a>
+
+                            <a class="dropdown-item" href="weeklyReportExperience">Personal Experience</a>
+                            <a class="dropdown-item" href="weeklyReportQuestion">Question</a>
+                            <a class="dropdown-item" href="weeklyReportCrash">Crash Report</a>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive mt-2">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th class="text-dark">AnalysisDate</th>
+                                <th class="text-dark">ReviewAt</th>
+                                <th class="text-dark">ReviewerName</th>
+                                <th class="text-dark">Review</th>
+                                <th class="text-dark">Rating</th>
+                                <th class="text-dark">Sentiment</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            {% for analysis_date,rev_date,username,review,rating, sentiment in reviews_data %}
+                                <tr>
+
+                                    <td class="text-secondary"><small>{{ analysis_date }}</small></td>
+                                    <td class="text-secondary"><small>{{ rev_date }}</small></td>
+                                    <td class="text-secondary"><small>{{ username }}</small></td>
+                                    <td class="text-secondary"><small>{{ review }}</small></td>
+                                    <td class="text-secondary"><small>{{ rating }}</small></td>
+                                    <td class="text-primary"><small>{{ sentiment }}</small></td>
+
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}

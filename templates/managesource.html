@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}  <title>{{ title }}</title> {% endblock %}
+{% block content %}
+
+    <div class="container mb-4">
+        <div class="row">
+
+            <div class="col-md-8">
+                <div class="container mt-5 pt-5">
+                    <h4 class="text-dark">
+                        Welcome !
+                    </h4>
+                    <span class="text-secondary">
+                        Add your first App or source to get started. Go to <span class="text-primary"> Profile>Add App Details.</span>
+                    </span>
+
+                </div>
+
+            </div>
+               <div class="col-md-4">
+                   <form action="profile">
+                          <div class="container mt-5 pt-5">
+                      <button type="submit" class="btn btn-info  btn-sm "> + Add App Details</button>
+
+                </div>
+                   </form>
+
+
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}
